@@ -1,4 +1,40 @@
-h2 {
-	font-size: 50px;
-	color: darkred;
+.container {
+	width: 1170px;
+	margin: 0 auto;
+	border: 2px dotted black;
+
 }
+
+.bigbox {
+	width: 500px;
+	height: 500px;
+	background-color: yellow;
+	position: relative;
+}
+
+.smallbox {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*transition-property: all;
+	transition-duration: 3s;
+	transition-timing-function: linear;
+	transition-delay: 1s;*/
+
+	transition:all 3s linear 1s;
+}
+
+.smallbox:hover {
+	background-color: green;
+	border-radius: 100px;
+}
+
+
+
+
+
